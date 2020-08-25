@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*cores*/
+/*reset*/
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+/*Estilização dos títulos e textos*/
+body, input, textarea {
+  font-family: 'Roboto' serif; }
+
+.titulo1, .titulo2, .titulo3,
+.titulo4, .titulo5, .titulo6,
+.subtitulo1, .subtitulo2,
+.textButton, .textoLongo1,
+.textoLongo2, .textOverline, .legenda {
+  font-family: 'Roboto', sans-serif; }
+
+.titulo1, .titulo2 {
+  font-weight: 300; }
+
+.titulo1 {
+  font-size: 96px;
+  letter-spacing: -1.5px; }
+
+.titulo2 {
+  font-size: 60px;
+  letter-spacing: -0.5px; }
+
+.titulo3 {
+  font-size: 48px; }
+
+.titulo4 {
+  font-size: 34px; }
+
+.titulo5 {
+  font-size: 24px; }
+
+.titulo3, .titulo4, .titulo5, .subtitulo1, .textoLongo1, .textoLongo2, .legenda, .textOverline {
+  font-weight: 400; }
+
+.titulo6 {
+  font-size: 20px; }
+
+.subtitulo1, .textoLongo1 {
+  font-size: 16px; }
+
+.titulo6, .subtitulo1 {
+  letter-spacing: 0.15px; }
+
+.subtitulo2, .textoLongo2, .textButton {
+  font-size: 14px; }
+
+.textoLongo2, .titulo4 {
+  letter-spacing: 0.25px; }
+
+.subtitulo2, .titulo6, .textButton {
+  font-weight: 500; }
+
+.textoLongo1 {
+  letter-spacing: 0.5px; }
+
+.textButton {
+  letter-spacing: 1.25px; }
+
+.legenda {
+  font-size: 12px;
+  letter-spacing: 0.4px; }
+
+.textOverline {
+  font-size: 10px;
+  letter-spacing: 1.5px; }
+
+.textButton, .textOverline {
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=estilos.css.map */

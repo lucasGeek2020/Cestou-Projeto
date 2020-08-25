@@ -1,0 +1,87 @@
+/*Estilização dos títulos e textos*/
+
+body,input, textarea{
+    font-family: 'Roboto' serif;
+}
+.titulo1,.titulo2, .titulo3,
+.titulo4,.titulo5,.titulo6,
+.subtitulo1,.subtitulo2,
+.textButton, .textoLongo1,
+.textoLongo2,.textOverline,.legenda
+{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.titulo1, .titulo2{
+    font-weight: 300;
+}
+
+.titulo1{
+    font-size: 96px;
+    letter-spacing: -1.5px;
+
+}
+.titulo2{
+    font-size: 60px;
+    letter-spacing: -0.5px;
+}
+.titulo3{
+    
+    font-size: 48px;
+}
+.titulo4{
+    font-size: 34px;
+    
+}
+.titulo5{
+    font-size: 24px;
+}
+.titulo3, .titulo4, .titulo5,.subtitulo1,.textoLongo1,.textoLongo2,.legenda,.textOverline{
+    font-weight: 400; 
+}
+
+
+.titulo6{
+    font-size: 20px;
+   
+    
+}
+.subtitulo1,.textoLongo1{
+    font-size: 16px;
+}
+
+.titulo6, .subtitulo1{
+    letter-spacing: 0.15px;
+}
+
+.subtitulo2,.textoLongo2,.textButton{
+    font-size: 14px;
+    
+}
+.textoLongo2, .titulo4{
+    letter-spacing: 0.25px;
+}
+
+.subtitulo2, .titulo6,.textButton{
+    font-weight: 500;  
+}
+
+.textoLongo1{
+    letter-spacing: 0.5px;
+}
+.textButton{
+    letter-spacing: 1.25px;
+    
+}
+.legenda{
+    font-size: 12px;
+    letter-spacing:0.4px;
+}
+
+.textOverline{
+    font-size: 10px;
+    letter-spacing:1.5px;
+}
+.textButton, .textOverline{
+    text-transform: uppercase;
+}
