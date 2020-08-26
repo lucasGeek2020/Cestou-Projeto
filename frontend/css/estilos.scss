@@ -2,5 +2,11 @@
 
 @import '2-generico/reset';
 
-@import '3-base/*';
+@import '3-base/base';
+@import  '3-base/titulos';
+@import  '3-base/botao';
+
+@import '4-objeto/links';
+
+@import '5-componentes/topBar';
 

@@ -119,4 +119,23 @@ body, input, textarea {
 .textButton, .textOverline {
   text-transform: uppercase; }
 
+button {
+  border: none;
+  background: none; }
+
+.link {
+  cursor: pointer;
+  transition: opacity .3s; }
+
+.link:hover {
+  opacity: .6; }
+
+.top-bar {
+  background-color: #FF595E;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.15); }
+
 /*# sourceMappingURL=estilos.css.map */
