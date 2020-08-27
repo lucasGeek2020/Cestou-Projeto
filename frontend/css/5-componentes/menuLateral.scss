@@ -1,0 +1,26 @@
+.menu-lateral{
+    background-color: $branco;
+    width: 304px;
+    padding: 16px;
+    height: 100%;
+
+}
+
+.user-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > :first-child{
+        margin-right: 8px;
+    }
+}
+
+.buttons-container{
+    display: flex;
+    margin-top: 16px;
+    > :first-child{
+        margin-right: 8px;
+    }
+      
+}

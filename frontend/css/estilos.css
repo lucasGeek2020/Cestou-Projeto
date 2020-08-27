@@ -50,6 +50,9 @@ table {
 a {
   text-decoration: none; }
 
+body {
+  background-color: #EBEBEB; }
+
 /*Estilização dos títulos e textos*/
 body, input, textarea {
   font-family: 'Roboto' serif; }
@@ -119,23 +122,57 @@ body, input, textarea {
 .textButton, .textOverline {
   text-transform: uppercase; }
 
+.link {
+  cursor: pointer; }
+
 button {
   border: none;
-  background: none; }
+  background: none;
+  cursor: pointer; }
 
-.link {
-  cursor: pointer;
-  transition: opacity .3s; }
-
-.link:hover {
-  opacity: .6; }
+.btn {
+  height: 36px;
+  min-width: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 4px;
+  transition: box-shadow .2s; }
+  .btn.-preenchido {
+    background-color: #FF595E;
+    color: #fff; }
+    .btn.-preenchido:hover {
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      filter: brightness(120%); }
+  .btn.-comBorda {
+    border: 1px solid #FF595E;
+    color: #FF595E; }
+    .btn.-comBorda:hover {
+      background-color: rgba(0, 0, 0, 0.05); }
 
 .top-bar {
   background-color: #FF595E;
   height: 56px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.15); }
+  align-items: center; }
+
+.menu-lateral {
+  background-color: #fff;
+  width: 304px;
+  padding: 16px;
+  height: 100%; }
+
+.user-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .user-container > :first-child {
+    margin-right: 8px; }
+
+.buttons-container {
+  display: flex;
+  margin-top: 16px; }
+  .buttons-container > :first-child {
+    margin-right: 8px; }
 
 /*# sourceMappingURL=estilos.css.map */
