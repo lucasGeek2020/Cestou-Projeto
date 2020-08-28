@@ -1,0 +1,23 @@
+.list-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    
+    > .nome{
+        color:$textoClaro;
+    }
+    > .icon{
+        margin-right: 16px;
+        
+    }
+
+    &:hover{
+        background-color: rgba($corPrimaria, $alpha: 0.08);
+    }
+}

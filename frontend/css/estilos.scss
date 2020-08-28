@@ -2,13 +2,15 @@
 
 @import '2-generico/reset';
 
-@import '3-base/base';
-@import  '3-base/titulos';
+@import '3-base/base',
+        '3-base/titulos';
 
 
-@import '4-objeto/links';
-@import  '4-objeto/botao.scss';
+@import '4-objeto/links',
+        '4-objeto/botao.scss';
 
-@import '5-componentes/topBar';
-@import '5-componentes/menuLateral';
+@import '5-componentes/topBar',
+        '5-componentes/menuLateral',
+        '5-componentes/list',
+        '5-componentes/linhaDivisoria';
 
