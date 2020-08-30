@@ -4,6 +4,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 16px;
 
+    @media(min-width: 840px){
+        height: 72px;
+    }
+    
+    >.right{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.showMenu,.busca{
+    @media (min-width:840px) {
+        display: none;
+    }
+}
+
+.inputBusca,.botaoLogar,.botaoRegistrar{
+    @media (max-width:840px) {
+        display: none;
+    } 
+}
+
+.inputBusca{
+    color:$textoEscuro;
+    min-width: 400px;
+    width: 40vw;
+    
+   
 }

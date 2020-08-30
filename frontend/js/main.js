@@ -10,14 +10,14 @@ function removeClasse(id,classe){
     getID(id).classList.remove(classe)
 }
 getID("background").onclick = () =>{
-    removeClasse("menuLateral","-displayOn");
-    removeClasse("background","-displayOn");
+    removeClasse("menuLateral","-ativo");
+    removeClasse("background","-ativo");
 };
 
 let menu = getID("showMenu");
 menu.onclick = () =>{
-    adicionaClasse("menuLateral","-displayOn");
-    adicionaClasse("background","-displayOn");
+    adicionaClasse("menuLateral","-ativo");
+    adicionaClasse("background","-ativo");
    
     
 }

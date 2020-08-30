@@ -3,9 +3,6 @@
 .-hidden {
   display: none !important; }
 
-.-displayOn {
-  display: block !important; }
-
 /*reset*/
 * {
   box-sizing: border-box; }
@@ -143,24 +140,56 @@ button {
   padding-right: 16px;
   border-radius: 4px;
   transition: box-shadow .2s; }
+  .btn.-preenchido:hover, .btn.-preenchidoBranco:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    filter: brightness(120%); }
   .btn.-preenchido {
     background-color: #FF595E;
     color: #fff; }
-    .btn.-preenchido:hover {
-      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-      filter: brightness(120%); }
+  .btn.-preenchidoBranco {
+    background-color: #fff;
+    color: #FF595E; }
+  .btn.-soTextoBranco {
+    color: #fff; }
   .btn.-comBorda {
     border: 1px solid #FF595E;
     color: #FF595E; }
     .btn.-comBorda:hover {
       background-color: rgba(0, 0, 0, 0.05); }
 
+input {
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  border-radius: 4px; }
+
 .top-bar {
   background-color: #FF595E;
   height: 56px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 16px; }
+  @media (min-width: 840px) {
+    .top-bar {
+      height: 72px; } }
+  .top-bar > .right {
+    display: flex;
+    align-items: center; }
+
+@media (min-width: 840px) {
+  .showMenu, .busca {
+    display: none; } }
+
+@media (max-width: 840px) {
+  .inputBusca, .botaoLogar, .botaoRegistrar {
+    display: none; } }
+
+.inputBusca {
+  color: #3E363F;
+  min-width: 400px;
+  width: 40vw; }
 
 .menu-lateral {
   background-color: #fff;
@@ -168,11 +197,12 @@ button {
   padding: 16px;
   height: 100%;
   position: fixed;
-  left: 0;
+  left: -304px;
   top: 0;
-  display: none;
-  -webkit-animation: .3s ease showAnimacao;
-  animation: .3s ease showAnimacao; }
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  z-index: 3; }
+  .menu-lateral.-ativo {
+    transform: translateX(304px); }
 
 .user-container {
   display: flex;
@@ -189,25 +219,18 @@ button {
 
 .background {
   display: none;
+  cursor: pointer;
   width: 100vw;
   height: 100%;
   background: rgba(0, 0, 0, 0.24);
   position: absolute;
   top: 0;
-  left: 304px;
-  -webkit-animation: .2s linear showBackgrund;
-  animation: .2s linear showBackgrund; }
+  left: 0px;
+  z-index: 0;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .background.-ativo {
+    display: block; }
 
-@keyframes showBackgrund {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@keyframes showAnimacao {
-  from {
-    left: -304px; }
-  to {
-    left: 0; } }
 .list-container {
   display: flex;
   flex-direction: column; }
