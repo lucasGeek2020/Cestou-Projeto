@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <aside class="menu-lateral">
+    <aside class="menu-lateral" id="menuLateral">
         <div class="header">
             <div class="user-container">
                 <div class="imagem">
@@ -35,7 +35,7 @@
             <nav class="list-container">
                 <a href="" class="item">
                     <span class="icon">
-                        <img src="img/icons/home-black-24dp(1).svg" alt="Início">
+                        <svg id="homeicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="24px" height="24px"><path id="path1" d="M0 0h24v24H0V0z" fill="none"/><path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
                     </span>
                     <span class="nome subtitulo1">Início</span>
                 </a>
@@ -79,11 +79,14 @@
         </div>
         
     </aside>
+    <div class="background"id="background">
+
+    </div>
 
     <header class="top-bar">
 
         <div class="left">
-            <button class="link">
+            <button class="link" id="showMenu">
                 <img src="img/icons/menu-white-24dp.svg" alt="Mostrar/Fechar menu lateral" >
             </button>
             <a href="#" class="link">
@@ -102,6 +105,8 @@
         </div>
     </header>
 
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

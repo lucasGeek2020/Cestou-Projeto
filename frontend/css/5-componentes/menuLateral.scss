@@ -6,18 +6,11 @@
     position:fixed;
     left: 0;
     top: 0;
+    display: none;
+
     
-
-    &::after{
-        width: 100vw;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.24);
-        position: absolute;
-        top: 0;
-        left: 304px;
-        content: ' ';
-    }
-
+    -webkit-animation: .3s ease showAnimacao;
+    animation: .3s ease showAnimacao;
 }
 
 .user-container{
@@ -40,4 +33,33 @@
       
 }
 
+.background{
+    display: none;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: 0;
+    left: 304px; 
+    -webkit-animation: .2s linear showBackgrund;
+    animation: .2s linear showBackgrund;
+    
+}
 
+@keyframes showBackgrund{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes showAnimacao{
+    from{
+        left: -304px;
+    }
+    to{
+        left: 0;
+    }
+}

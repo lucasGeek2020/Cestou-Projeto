@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /*cores*/
+.-hidden {
+  display: none !important; }
+
+.-displayOn {
+  display: block !important; }
+
 /*reset*/
 * {
   box-sizing: border-box; }
@@ -163,15 +169,10 @@ button {
   height: 100%;
   position: fixed;
   left: 0;
-  top: 0; }
-  .menu-lateral::after {
-    width: 100vw;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.24);
-    position: absolute;
-    top: 0;
-    left: 304px;
-    content: ' '; }
+  top: 0;
+  display: none;
+  -webkit-animation: .3s ease showAnimacao;
+  animation: .3s ease showAnimacao; }
 
 .user-container {
   display: flex;
@@ -186,20 +187,44 @@ button {
   .buttons-container > :first-child {
     margin-right: 8px; }
 
+.background {
+  display: none;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: 0;
+  left: 304px;
+  -webkit-animation: .2s linear showBackgrund;
+  animation: .2s linear showBackgrund; }
+
+@keyframes showBackgrund {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes showAnimacao {
+  from {
+    left: -304px; }
+  to {
+    left: 0; } }
 .list-container {
   display: flex;
   flex-direction: column; }
-
-.item {
-  display: flex;
-  align-items: center;
-  height: 56px; }
-  .item > .nome {
-    color: #747474; }
-  .item > .icon {
-    margin-right: 16px; }
-  .item:hover {
-    background-color: rgba(255, 89, 94, 0.08); }
+  .list-container > .item {
+    display: flex;
+    align-items: center;
+    height: 56px; }
+    .list-container > .item > .nome {
+      color: #747474; }
+    .list-container > .item > .icon {
+      margin-right: 16px; }
+    .list-container > .item:hover {
+      background-color: rgba(255, 89, 94, 0.08); }
+  .list-container > .item.-selecionado {
+    background-color: rgba(255, 89, 94, 0.24); }
+    .list-container > .item.-selecionado > .nome {
+      color: #FF595E; }
 
 .linha-divisoria {
   width: 100%;

@@ -1,5 +1,8 @@
 @import '0-config/variaveis';
 
+@import '1-ferramentas/-hidden',
+        '1-ferramentas/-displayOn';
+
 @import '2-generico/reset';
 
 @import '3-base/base',
