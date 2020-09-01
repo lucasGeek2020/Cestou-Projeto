@@ -142,7 +142,7 @@ button {
   transition: box-shadow .2s; }
   .btn.-preenchido:hover, .btn.-preenchidoBranco:hover {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-    filter: brightness(120%); }
+    opacity: .9; }
   .btn.-preenchido {
     background-color: #FF595E;
     color: #fff; }
@@ -271,5 +271,32 @@ input {
     transition: color .3s; }
     .pesquisa-form > .botao:hover {
       color: #fff; }
+
+.rodape-container {
+  background-color: #fff;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  padding: 24px;
+  width: 100%; }
+  .rodape-container > .legenda {
+    text-align: center; }
+
+.content {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .content > .image {
+    background: url("../img/logoCestou-horizontal.svg");
+    background-repeat: no-repeat;
+    background-size: 120px;
+    height: 100%;
+    width: 100%; }
+  .content > .botao {
+    color: #3E363F; }
 
 /*# sourceMappingURL=estilos.css.map */

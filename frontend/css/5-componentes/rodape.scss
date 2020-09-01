@@ -1,0 +1,37 @@
+.rodape-container{
+    background-color: $branco;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    padding: 24px;
+    width: 100%;
+
+    >.legenda{
+        text-align:center;
+    }
+
+    
+}
+
+.content{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    >.image{
+        background:url('../img/logoCestou-horizontal.svg');
+        background-repeat: no-repeat;
+        background-size: 120px;
+        height: 100%;
+        width: 100%;
+        
+    }
+    >.botao{
+        color: $textoEscuro;
+    }
+    
+}
