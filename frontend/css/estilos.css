@@ -58,7 +58,7 @@ body {
 
 /*Estilização dos títulos e textos*/
 body, input, textarea {
-  font-family: 'Roboto' serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .titulo1, .titulo2, .titulo3,
 .titulo4, .titulo5, .titulo6,
@@ -183,13 +183,8 @@ input {
     display: none; } }
 
 @media (max-width: 840px) {
-  .inputBusca, .botaoLogar, .botaoRegistrar {
+  .botaoLogar, .botaoRegistrar {
     display: none; } }
-
-.inputBusca {
-  color: #3E363F;
-  min-width: 400px;
-  width: 40vw; }
 
 .menu-lateral {
   background-color: #fff;
@@ -238,7 +233,7 @@ input {
     display: flex;
     align-items: center;
     height: 56px; }
-    .list-container > .item > .nome {
+    .list-container > .item > .nome, .list-container > .item > .icon {
       color: #747474; }
     .list-container > .item > .icon {
       margin-right: 16px; }
@@ -253,5 +248,28 @@ input {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.12);
   margin-top: 16px; }
+
+.pesquisa-form {
+  display: flex; }
+  @media (max-width: 840px) {
+    .pesquisa-form {
+      display: none; } }
+  .pesquisa-form > .inputBusca {
+    color: #3E363F;
+    min-width: 380px;
+    width: 40vw;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .pesquisa-form > .botao {
+    width: 65px;
+    background-color: rgba(255, 255, 255, 0.38);
+    color: rgba(255, 255, 255, 0.6);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: color .3s; }
+    .pesquisa-form > .botao:hover {
+      color: #fff; }
 
 /*# sourceMappingURL=estilos.css.map */

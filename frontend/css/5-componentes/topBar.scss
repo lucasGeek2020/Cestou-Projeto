@@ -14,7 +14,8 @@
         display: flex;
         align-items: center;
     }
-
+    
+    
 }
 
 .showMenu,.busca{
@@ -23,16 +24,8 @@
     }
 }
 
-.inputBusca,.botaoLogar,.botaoRegistrar{
+.botaoLogar,.botaoRegistrar{
     @media (max-width:840px) {
         display: none;
     } 
-}
-
-.inputBusca{
-    color:$textoEscuro;
-    min-width: 400px;
-    width: 40vw;
-    
-   
 }
