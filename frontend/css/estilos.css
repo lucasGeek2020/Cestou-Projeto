@@ -178,6 +178,9 @@ input {
     display: flex;
     align-items: center; }
 
+.showMenu {
+  color: #fff; }
+
 @media (min-width: 840px) {
   .showMenu, .busca {
     display: none; } }
@@ -221,7 +224,7 @@ input {
   position: absolute;
   top: 0;
   left: 0px;
-  z-index: 0;
+  z-index: 1;
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .background.-ativo {
     display: block; }
@@ -283,6 +286,9 @@ input {
   width: 100%; }
   .rodape-container > .legenda {
     text-align: center; }
+  @media (min-width: 840px) {
+    .rodape-container {
+      height: 259px; } }
 
 .content {
   height: 120px;
@@ -294,9 +300,43 @@ input {
     background: url("../img/logoCestou-horizontal.svg");
     background-repeat: no-repeat;
     background-size: 120px;
+    background-position-y: center;
     height: 100%;
-    width: 100%; }
+    width: 120px; }
+    @media (min-width: 840px) {
+      .content > .image {
+        background: url("../img/logoCestou-vertical.svg");
+        background-repeat: no-repeat;
+        background-size: 120px; } }
   .content > .botao {
-    color: #3E363F; }
+    color: #3E363F;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .content > .botao > .icon {
+      transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+    .content > .botao:hover > .icon, .content > .botao:active > .icon {
+      transform: translateY(-10px); }
+
+.links-footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%; }
+  @media (max-width: 840px) {
+    .links-footer {
+      display: none; } }
+  .links-footer > .item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500; }
+    .links-footer > .item > .titulo5, .links-footer > .item > .subtitulo1 {
+      color: #3E363F; }
+    .links-footer > .item > .titulo5 {
+      font-weight: 500;
+      margin-bottom: 16px; }
+    .links-footer > .item > .subtitulo1 {
+      margin-bottom: 8px; }
+      .links-footer > .item > .subtitulo1:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=estilos.css.map */
