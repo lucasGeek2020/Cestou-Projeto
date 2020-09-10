@@ -127,6 +127,8 @@ body, input, textarea {
 
 .link {
   cursor: pointer; }
+  .link:hover {
+    text-decoration: underline; }
 
 button {
   border: none;
@@ -151,11 +153,14 @@ button {
     color: #FF595E; }
   .btn.-soTextoBranco {
     color: #fff; }
-  .btn.-comBorda {
+  .btn.-comBordaCorBranco:hover, .btn.-comBordaCorPrimaria:hover {
+    background-color: rgba(0, 0, 0, 0.05); }
+  .btn.-comBordaCorBranco {
+    border: 1px solid #fff;
+    color: #fff; }
+  .btn.-comBordaCorPrimaria {
     border: 1px solid #FF595E;
     color: #FF595E; }
-    .btn.-comBorda:hover {
-      background-color: rgba(0, 0, 0, 0.05); }
 
 input {
   height: 40px;
@@ -280,9 +285,9 @@ input {
   height: 180px;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   padding: 24px;
+  bottom: 0;
   width: 100%; }
   .rodape-container > .legenda {
     text-align: center; }
@@ -336,7 +341,113 @@ input {
       margin-bottom: 16px; }
     .links-footer > .item > .subtitulo1 {
       margin-bottom: 8px; }
-      .links-footer > .item > .subtitulo1:hover {
-        text-decoration: underline; }
+
+.main-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 48px;
+  padding-top: 16px;
+  height: 100%; }
+  @media (min-width: 840px) {
+    .main-container {
+      padding-left: 259px;
+      padding-right: 259px; } }
+
+.destaque-container > .titulo5 {
+  color: #3E363F; }
+
+.loja {
+  margin-top: 16px;
+  width: 100%;
+  height: 184px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; }
+  @media (min-width: 840px) {
+    .loja {
+      height: 318px; } }
+
+.imagem-fundo {
+  background: url("../img/loja-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  position: relative; }
+  .imagem-fundo > .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    height: 61.3333333333px;
+    padding: 16px;
+    width: 100%;
+    position: absolute;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    bottom: 0;
+    transition: height 0.3s cubic-bezier(0.79, 0.14, 0.15, 0.86); }
+    .imagem-fundo > .texto:hover {
+      height: 92px; }
+    @media (min-width: 840px) {
+      .imagem-fundo > .texto {
+        height: 106px; }
+        .imagem-fundo > .texto:hover {
+          height: 159px; } }
+    .imagem-fundo > .texto > ul {
+      margin-top: 8px;
+      display: flex; }
+      .imagem-fundo > .texto > ul > li {
+        margin-right: 4px; }
+
+.categorias-container {
+  margin-top: 16px; }
+  .categorias-container > .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .categorias-container > .head > .link {
+      color: #00C8C8;
+      margin-left: 24px; }
+    .categorias-container > .head > .titulo5 {
+      color: #3E363F; }
+    @media (min-width: 840px) {
+      .categorias-container > .head {
+        justify-content: start; } }
+  .categorias-container > .categorias {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 840px) {
+      .categorias-container > .categorias a:nth-child(n+5) {
+        display: none; } }
+
+.categoria-item {
+  text-align: center;
+  width: 72px; }
+  .categoria-item:hover > .backgound {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); }
+  .categoria-item:hover > .subtitulo1 {
+    color: #3E363F; }
+  .categoria-item > .backgound {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .3s; }
+    .categoria-item > .backgound > .material-icons, .categoria-item > .backgound > .material-icons-outlined {
+      font-size: 48px;
+      color: #FF595E; }
+  .categoria-item > .subtitulo1 {
+    margin-top: 16px;
+    display: block;
+    color: #747474;
+    transition: color .3s; }
 
 /*# sourceMappingURL=estilos.css.map */

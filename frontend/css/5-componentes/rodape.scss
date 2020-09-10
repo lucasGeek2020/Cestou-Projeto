@@ -3,9 +3,9 @@
     height: 180px;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     padding: 24px;
+    bottom: 0;
     width: 100%;
 
     >.legenda{
@@ -81,9 +81,6 @@
        >.subtitulo1{
            margin-bottom: 8px;
 
-           &:hover{
-               text-decoration:underline;
-           }
        }
     }
 }

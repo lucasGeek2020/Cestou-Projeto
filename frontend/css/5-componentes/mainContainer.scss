@@ -1,0 +1,11 @@
+.main-container{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 48px;
+    padding-top: 16px;
+    height:100%;
+    @media (min-width:840px){
+        padding-left: 259px;
+        padding-right: 259px;
+    }
+}

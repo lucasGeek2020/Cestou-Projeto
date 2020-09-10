@@ -34,13 +34,19 @@ button{
         color: $branco;
     }
 
-    &.-comBorda{
-        border: 1px solid $corPrimaria;
-        color:$corPrimaria;
-
+    &.-comBordaCorBranco,&.-comBordaCorPrimaria{
         &:hover{
             background-color: rgba($color: #000000, $alpha: 0.05);
         }
+    }
+    &.-comBordaCorBranco{
+        border: 1px solid $branco;
+        color:$branco;
+    }
+    &.-comBordaCorPrimaria{
+        border: 1px solid $corPrimaria;
+        color:$corPrimaria;
+        
     }
      
 }
